@@ -1,1 +1,132 @@
 # Galina-photo-site
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #fdfaf6;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #d9e4d0;
+  color: #2f3e2e;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+h2 {
+  color: #2f3e2e;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.photo-frame {
+  background-color: #f6f1e7;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.frame img {
+  width: 250px;
+  border: 6px solid #c8d5b9;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  max-width: 90%;
+}
+
+.portfolio {
+  background-color: #eef0e3;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.folders {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.folder {
+  background-color: rgba(200, 213, 185, 0.4);
+  border: 1px solid #c8d5b9;
+  padding: 20px 30px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  flex: 1 1 200px;
+  max-width: 250px;
+  text-align: center;
+}
+
+.folder:hover {
+  background-color: rgba(200, 213, 185, 0.6);
+}
+
+.pricing {
+  background-color: #fffaf3;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.pricing ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pricing li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.contacts {
+  background-color: #f2f7ef;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.contacts ul {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+}
+
+footer {
+  background-color: #d9e4d0;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #2f3e2e;
+}
+
+/* Адаптация для телефонов */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .folder {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .pricing li,
+  .contacts ul {
+    font-size: 16px;
+  }
+}
